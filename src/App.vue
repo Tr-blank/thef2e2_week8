@@ -58,12 +58,12 @@ body
   height: 100vh;
 header
   width: 20%;
-  padding: 80px 45px 0
+  padding: 40px 45px 0
   text-align: center;
   background: #2F3136;
 .folder
   width: 80%;
-  padding: 30px;
+  padding: 52px 30px;
 .header__botton
   display: block;
   background: #FFD46E;
@@ -74,5 +74,20 @@ header
 .nav__item
   display: block;
   margin-bottom: 12px;
+.breadcrumbs
+  &__item
+    color: #F3F2EF;
+    opacity: .5;
+    &::after
+      content: '';
+      border-color: transparent #f3f2ef;
+      margin: 0 10px;
+      border-style: solid;
+      border-width: 4px 0px 4px 6px;
+      display: inline-block;
+    &--now
+      opacity: 1;
+      &::after
+        display: none;
 
 </style>
